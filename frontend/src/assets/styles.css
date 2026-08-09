@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: "Inter", Arial, sans-serif;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f5f7fb;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.dark body {
+  background: #0f172a;
+}
+
+
+/* Small visual details that keep the interface clean without over-styling it. */
+.dashboard-shell {
+  background:
+    radial-gradient(circle at 90% 0%, rgba(59, 130, 246, 0.10), transparent 28rem),
+    radial-gradient(circle at 0% 35%, rgba(99, 102, 241, 0.06), transparent 24rem);
+}
+
+.dark .dashboard-shell {
+  background:
+    radial-gradient(circle at 90% 0%, rgba(59, 130, 246, 0.14), transparent 28rem),
+    radial-gradient(circle at 0% 35%, rgba(99, 102, 241, 0.08), transparent 24rem);
+}
+
+.login-panel {
+  background:
+    radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.08), transparent 20rem),
+    radial-gradient(circle at 15% 90%, rgba(99, 102, 241, 0.06), transparent 18rem);
+}
+
+.dark .login-panel {
+  background:
+    radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.12), transparent 20rem),
+    radial-gradient(circle at 15% 90%, rgba(99, 102, 241, 0.08), transparent 18rem);
+}
+
+.soft-card {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.soft-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
+}
+
+.dark .soft-card:hover {
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.20);
+}

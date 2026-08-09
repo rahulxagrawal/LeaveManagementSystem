@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1786293794353,
+    "userId": 1,
+    "leaveType": "Sick",
+    "fromDate": "2026-08-11",
+    "toDate": "2026-08-16",
+    "days": 4,
+    "reason": "fever",
+    "status": "Approved"
+  }
+]
