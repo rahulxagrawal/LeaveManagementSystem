@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://leavemanagementsystem-6w4w.onrender.com/";
 
 /**
  * Sends login credentials to the backend.
